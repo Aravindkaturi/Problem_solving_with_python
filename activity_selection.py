@@ -1,4 +1,9 @@
 arr=[[1,2],[3,4],[0,6],[5,7],[7.5,9.5]]
+n = len(arr)
+for i in range(n):
+    for j in range(0, n-i-1):
+        if arr[j][1] > arr[j+1][1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
 i=0
 j=1
 count=1
